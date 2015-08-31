@@ -1,0 +1,54 @@
+package edu.wbqa.loops;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class Swap {
+
+	public void swap1() {
+		int x, y;
+	      System.out.println("Enter x and y");
+	      Scanner in = new Scanner(System.in);
+	 
+	      x = in.nextInt();
+	      y = in.nextInt();
+	 
+	      System.out.println("Before Swapping\nx = "+x+"\ny = "+y);
+	 
+	      x = x + y;
+	      y = x - y;
+	      x = x - y;
+	 
+	      System.out.println("After Swapping\nx = "+x+"\ny = "+y);
+
+	}
+
+	public void swap2() {
+		int x, y, temp;
+	      System.out.println("Enter x and y");
+	      Scanner in = new Scanner(System.in);
+	 
+	      x = in.nextInt();
+	      y = in.nextInt();
+	 
+	      System.out.println("Before Swapping\nx = "+x+"\ny = "+y);
+	 
+	      temp = x;
+	      x = y;
+	      y = temp;
+	 
+	      System.out.println("After Swapping\nx = "+x+"\ny = "+y);
+
+	}
+
+	public static void main(String[] args) {
+		Swap s = new Swap();
+		s.swap1();
+		s.swap2();
+		
+		
+
+	}
+
+}
